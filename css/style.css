@@ -1,0 +1,119 @@
+/* GERAL */
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: #00532e;
+}
+
+.countainer{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 65px;
+    padding-top: 10px;
+    font-family: fantasy;
+}
+
+.header{
+    width: 100%;
+    height: 110px;
+    border-bottom: 5px solid rgb(148, 132, 72);
+}
+
+.nome_clube{
+    float: left;
+    padding-left: 30px;
+    margin-top: 16px;
+    display: inline-block;
+    font-size: 50px;
+}
+
+.img_container{
+    height: 90px;
+    width: 90px;
+    margin-left: 360px;
+}
+
+.lista{
+    float: right;
+    padding-right: 30px;
+    margin-top: 32px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.lista ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.lista a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.lista .clique{
+    color: rgb(148, 132, 72);
+}
+
+.countainer .s{
+    font-size: 40px;
+    color:rgb(214, 0, 0);
+}
+
+.countainer .e{
+    font-size: 40px;
+    color: rgb(214, 0, 0);
+}
+
+.countainer .p{
+    font-size: 40px;
+    color: white;
+}
+
+.imgbottom{
+    height: 130px;
+    margin-left: 540px;
+    margin-top: 10px;
+}
+
+.redesocial{
+    height: 30px;
+}
+
+.lista_redes{
+    margin-top: 35px;
+    float: right;
+    padding-right: 340px;
+}
+
+.lista_redes ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.titulo_redes{
+    color: rgb(148, 132, 72);
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 55px;
+    padding-left: 300px;
+}
+
+.rodape_criado{
+    color: rgb(148, 132, 72);
+    font-family: Trebuchet MS, sans-serif;
+    margin-left: 542px;
+    font-size: 18px;
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+/* GERAL */

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestra Itália</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../js/cadastro.js">
+</head>
+
+<body>
+    <div class="header">
+        <div class="countainer">
+            <div class="nome_clube">
+                <span class="s">S.</span>
+                <span class="e">E.</span>
+                <span class="p">Palmeiras</span>
+            </div>
+            <img class="img_container" src="../imgs/escudo.png" alt="">
+            <div class="lista">
+                <ul>
+                    <li><a href="home.html">Home -</a></li>
+                    <li><a href="historia.html">História -</a></li>
+                    <li><a href="idolos.html">Ídolos -</a></li>
+                    <li><a href="conquistas.html">Conquistas -</a></li>
+                    <li><a class="clique" href="cadastro.html">cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="cadastro">
+        <h1 class="titulo-contato">
+            Esteja por dentro das nossas atualizações!
+        </h1>
+        <form class="formulario">
+            <!-- <span id="mensagemErro"></span> -->
+            <ul id="mensagemErro" class="lista-erro"></ul>
+            <h3 class="title-input">Seu nome:</h3>
+            <input id="nome_contato" class="input_contato" placeholder="Nome">
+            <br>
+            <h3 class="title-input">Seu email:</h3>
+            <input id="email_contato" type="email" class="input_contato" placeholder="seunome@dominio.com">
+            <br>
+            <h3 class="title-input">Seu telefone:</h3>
+            <input id="tel_contato" class="input_contato" placeholder="DDD XXXXX-XXXX">
+            <br>
+            <h3 class="title-input">Digite sua mensagem aqui:</h3>
+            <Textarea id="mensagem_contato" name="mensagem" class="text_area" placeholder="Sua mensagem"
+                rows="5"></Textarea> <br>
+            <h3 class="title-input">Como prefere receber suas novidades?</h3>
+            <label class="preferencia-usuario">
+                <input id="email-radio" type="radio" checked>E-mail
+            </label>
+            <label class="preferencia-usuario">
+                <input type="radio" id="whatsapp">WhatsApp
+            </label> <br> <br>
+            <span class="preferencia-usuario">
+                <input type="checkbox" checked> Receber novidades por e-mail
+            </span> <br>
+        </form>
+        <br><button onclick="enviarContato()" class="botao_form"><b>Enviar</b></button>
+        <p class="msg-valid" id="pvalidacao"></p>
+        <div class="div_imagem_cont">
+            <img class="img_contato" src="../imgs/img-contato.png" alt="">
+        </div>
+    </div>
+    <div class="redes_sociais_cadastro">
+        <div>
+            <b class="titulo_redes">Acompanhe O Verdão Nas Redes Sociais:</b>
+        </div>
+        <!-- <form>
+                <input type="text" placeholder="Seu Email">
+                <button class="botao_cadastro">
+                    Cadastrar
+                </button>
+            </form> -->
+        <div class="lista_redes">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Palmeiras/">
+                        <img class="redesocial" src="../imgs/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/palmeiras/?hl=pt-br">
+                        <img class="redesocial" src="../imgs/instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Palmeiras">
+                        <img class="redesocial" src="../imgs/twitter.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <img class="imgbottom" src="../imgs/imgcadastro.png" alt="">
+    </div>
+    <div class="rodape_criado">
+        created by Caio Henrique Martins
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function enviarContato() {
+        var msgErros = validacaoContato();
+        mensagemErro.innerHTML = '';
+        pvalidacao.innerHTML = '';
+
+        if (msgErros.length > 0) {
+            for (var c = 0; c < msgErros.length; c++) {
+                var msgErro = msgErros[c];
+                var listaErros = document.createElement("li");
+                listaErros.innerHTML = msgErro;
+
+                mensagemErro.appendChild(listaErros)
+            }
+        } else {
+            var p_valid = document.createElement("p");
+            p_valid.innerHTML = "Informações corretas, sua mensagem foi enviada com sucesso!<br> Aguarde e receba as novidades do maior campeão nacional!";
+            pvalidacao.appendChild(p_valid);
+            //Código que faz o envio para o BD
+        }
+    }
+    function validacaoContato() {
+        var msgErros = [];
+
+        if (!nome_contato.value) {
+            msgErros.push("Preencha o nome");
+        }
+
+        if ((email_contato.value.search("@") == -1) ||
+            (email_contato.value.search(".") == -1) ||
+            (email_contato.value.search(" ") >= 1)) {
+            msgErros.push('Preencha o email corretamente')
+
+        }
+
+        if ((tel_contato.value.search("-") == -1) ||
+            tel_contato.value[tel_contato.value.length - 5] != "-") {
+            msgErros.push("O formato do telefone está incorreto");
+        }
+
+        if (!mensagem_contato.value) {
+            msgErros.push("Preencha a mensagem");
+        }
+
+        return msgErros;
+    }
+</script>

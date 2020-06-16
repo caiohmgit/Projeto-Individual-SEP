@@ -1,0 +1,97 @@
+/* ÍDOLOS */
+
+.posicao{
+    border-bottom: rgb(148, 132, 72) 5px solid;
+    border-top: rgb(148, 132, 72) 5px solid;
+    border-left: rgb(148, 132, 72) 5px solid;
+    border-right: rgb(148, 132, 72) 5px solid;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.titulo_posicao{
+    color: rgb(214, 0, 0);
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    text-transform: uppercase;
+}
+
+.nome{
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    text-transform: uppercase;
+    color: rgb(148, 132, 72);
+}
+
+.img_posicoes{
+    height: 180px;
+    padding-left: 10px;
+}
+
+.infos{
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    text-transform: uppercase;
+    color: rgb(148, 132, 72);
+    border-bottom: rgb(148, 132, 72);
+}
+
+.leao{
+    border-bottom: rgb(148, 132, 72);
+}
+
+.redes_sociais_idolos{
+    height: 120px;
+    width: 100%;
+    margin-top: 40px;
+    border-top: rgb(148, 132, 72) 5px solid;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.imgbottom{
+    height: 130px;
+    margin-left: 540px;
+    margin-top: 10px;
+}
+
+.redesocial{
+    height: 30px;
+}
+
+.lista_redes{
+    margin-top: 35px;
+    float: right;
+    padding-right: 340px;
+}
+
+.lista_redes ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.titulo_redes{
+    color: rgb(148, 132, 72);
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 55px;
+    padding-left: 300px;
+}
+
+.rodape_criado{
+    color: rgb(148, 132, 72);
+    font-family: Trebuchet MS, sans-serif;
+    margin-left: 542px;
+    font-size: 18px;
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+/* ÍDOLOS */

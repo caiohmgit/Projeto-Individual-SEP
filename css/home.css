@@ -1,0 +1,180 @@
+.titulo_body{
+    text-align: center;
+    color: rgb(214, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.estadio{
+    height: 530px;
+    width: 40%;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-bottom: rgb(148, 132, 72) 5px solid;
+    border-top: rgb(148, 132, 72) 5px solid;
+    border-left: rgb(148, 132, 72) 5px solid;
+    border-right: rgb(148, 132, 72) 5px solid;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.infos_estadio{
+    text-align: center;
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+.infos_estadio .titulos_allianz{
+    color: rgb(148, 132, 72);
+    font-family: Trebuchet MS, sans-serif;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.allianz{
+    height: 185px;
+    padding-left: 10px;
+}
+
+.img_torcida{
+    height: 185px;
+}
+
+.elenco{
+    height: 530px;
+    width: 40%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+    border-bottom: rgb(148, 132, 72) 5px solid;
+    border-top: rgb(148, 132, 72) 5px solid;
+    border-left: rgb(148, 132, 72) 5px solid;
+    border-right: rgb(148, 132, 72) 5px solid;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.nomes_elenco{
+    text-align: center;
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.posicoes{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(148, 132, 72);
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    padding-left: 235px;
+    text-transform: uppercase;
+}
+
+.hino{
+    height: 820px;
+    width: 40%;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-bottom: rgb(148, 132, 72) 5px solid;
+    border-top: rgb(148, 132, 72) 5px solid;
+    border-left: rgb(148, 132, 72) 5px solid;
+    border-right: rgb(148, 132, 72) 5px solid;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.autor_hino{
+    height: 300px;
+    width: 190px;
+    float: left;
+    padding-left: 10px;
+}
+
+.nome_autor{
+    padding-left: 50px;
+    color: rgb(148, 132, 72);
+    text-transform: uppercase;
+}
+
+.letra{
+   padding-left: 5px;
+   float: right;
+   margin-top: 0;
+}
+
+.letra_hino{
+    color: rgb(148, 132, 72);
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.letra_hino2{
+    color: rgb(214, 0, 0);
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info_hino{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.significados{
+    height: 820px;
+    width: 40%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+    border-bottom: rgb(148, 132, 72) 5px solid;
+    border-top: rgb(148, 132, 72) 5px solid;
+    border-left: rgb(148, 132, 72) 5px solid;
+    border-right: rgb(148, 132, 72) 5px solid;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.explicacao_escudo{
+    text-align: center;
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+.destaque_significados{
+    text-align: center;
+    color: rgb(148, 132, 72);
+    font-family: Trebuchet MS, sans-serif;
+    padding-right: 2px;
+    text-transform: uppercase;
+}
+
+.escudo_significado{
+    height: 120px;
+    padding-left: 220px;
+}
+
+.escudo_significado1{
+    height: 120px;
+    padding-left: 210px;
+}
+
+.redes_sociais_home{
+    height: 120px;
+    width: 100%;
+    margin-top: 1440px;
+    border-top: rgb(148, 132, 72) 5px solid;
+    font-family: Trebuchet MS, sans-serif;
+}
