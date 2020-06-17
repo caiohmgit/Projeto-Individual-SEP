@@ -1,0 +1,32 @@
+     @keyframes slide {
+        0% {
+            background-image: url('../img/imagem5.png');
+        }
+        10% {
+            background-image: url('../img/imagem2.png');
+        }
+        20.01% {
+            background-image: url('../img/imagem3.png');
+        }
+        30% {
+            background-image: url('../img/imagem4.png');
+        }
+        40.01% {
+            background-image: url('../img/imagem1.png');
+        }
+        50% {
+            background-image: url('../img/imagem6.png');
+        }
+        60.01% {
+            background-image: url('../img/imagem7.png');
+        }
+        80% {
+            background-image: url('../img/imagem8.png');
+        }
+        90.01% {
+            background-image: url('../img/imagem9.png');
+        }
+        100% {
+            background-image: url('../img/imagem10.png');
+        }
+    }

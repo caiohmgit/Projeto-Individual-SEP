@@ -1,4 +1,4 @@
-/* CADASTRO */
+/* LOGIN */
 
 .cadastro{
     border: rgb(148, 132, 72) 5px solid;
@@ -7,6 +7,16 @@
     margin-top: 20px;
     margin-bottom: 15px;
     font-family: Trebuchet MS, sans-serif;
+}
+
+.lista{
+    padding-right: 150px;
+    margin-top: 15px;
+    
+}
+
+.lista .clique{
+    font-size: 35px;
 }
 
 .formulario{
@@ -56,11 +66,11 @@
     height: 30px;
 }
 
-.img_cadastro{
-    height: 700px;
-    width: 480px;
+.img_login{
+    height: 600px;
+    width: 600px;
     position: relative;
-    bottom: 900px;
+    bottom: 450px;
     left: 650px;
 }
 
@@ -98,4 +108,4 @@
     padding-left: 250px;
 }
 
-/* CADASTRO */
+/* LOGIN */

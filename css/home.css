@@ -131,6 +131,14 @@
 
 }
 
+.escutar-hino{
+    color: rgb(148, 132, 72);
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
 .significados{
     height: 820px;
     width: 40%;
@@ -177,4 +185,91 @@
     margin-top: 1440px;
     border-top: rgb(148, 132, 72) 5px solid;
     font-family: Trebuchet MS, sans-serif;
+}
+
+.galeria-estadio{
+    margin: 1px auto;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-allianzhome{
+    position: absolute;
+    opacity: 0;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.foto-allianzhome1{
+    position: absolute;
+    opacity: 0;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 500px;
+}
+
+.foto-allianzhome3{
+    position: absolute;
+    opacity: 0;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 500px;
+}
+
+.foto-allianzhome4{
+    position: absolute;
+    opacity: 0;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 500px;
+}
+
+.foto-allianzhome5{
+    position: absolute;
+    opacity: 0;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 500px;
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform:scale(1.1,1.1)
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
+
+.foto-allianzhome1:nth-child(1){
+
+}
+
+.foto-allianzhome:nth-child(2){
+    animation-delay: 5s;
+}
+
+.foto-allianzhome3:nth-child(3){
+    animation-delay: 10s;
+}
+
+.foto-allianzhome4:nth-child(4){
+    animation-delay: 15s;
+}
+
+.foto-allianzhome5:nth-child(5){
+    animation-delay: 20s;
+}
+
+.foto-allianzhome1:nth-child(6){
+    animation-delay: 25s;
 }

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO</title>
+    <title>LOGIN</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../js/cadastro.js">
 </head>
 
@@ -21,12 +21,7 @@
             <img class="img_container" src="../imgs/escudo.png" alt="">
             <div class="lista">
                 <ul>
-                    <li><a href="home.html">Home -</a></li>
-                    <li><a href="historia.html">História -</a></li>
-                    <li><a href="idolos.html">Ídolos -</a></li>
-                    <li><a href="conquistas.html">Conquistas -</a></li>
-                    <li><a class="clique" href="cadastro.html">cadastrar -</a></li>
-                    <li><a href="login.html">sair</a></li>
+                    <li><a class="clique" href="login.html">login</a></li>
                 </ul>
             </div>
         </div>
@@ -35,44 +30,22 @@
 
     <div class="cadastro">
         <h1 class="titulo-contato">
-            Esteja por dentro das nossas atualizações!
+            Entre no site do seu time do coração!
         </h1>
         <form class="formulario">
             <!-- <span id="mensagemErro"></span> -->
             <ul id="mensagemErro" class="lista-erro"></ul>
-            <h3 class="title-input">Seu nome:</h3>
-            <input id="nome_contato" class="input_contato" placeholder="Nome">
-            <br>
-            <h3 class="title-input">Seu email:</h3>
+            <h3 class="title-input">Digite seu email:</h3>
             <input id="email_contato" type="email" class="input_contato" placeholder="seunome@dominio.com">
             <br>
-            <h3 class="title-input">Seu telefone:</h3>
-            <input id="tel_contato" class="input_contato" placeholder="DDD XXXXX-XXXX">
-            <br>
-            <h3 class="title-input">Digite uma senha:</h3>
+            <h3 class="title-input">Digite sua senha:</h3>
             <input id="senha_contato" class="input_contato" placeholder="sua senha">
             <br>
-            <h3 class="title-input">Confirmar senha:</h3>
-            <input id="confirmacao_contato" class="input_contato" placeholder="confirme sua senha">
-            <br>
-            <h3 class="title-input">Digite sua mensagem aqui:</h3>
-            <Textarea id="mensagem_contato" name="mensagem" class="text_area" placeholder="Sua mensagem"
-                rows="5"></Textarea> <br>
-            <h3 class="title-input">Como prefere receber suas novidades?</h3>
-            <label class="preferencia-usuario">
-                <input id="email-radio" type="radio" checked>E-mail
-            </label>
-            <label class="preferencia-usuario">
-                <input type="radio" id="whatsapp">WhatsApp
-            </label> <br> <br>
-            <span class="preferencia-usuario">
-                <input type="checkbox" checked> Receber novidades por e-mail
-            </span> <br>
-        </form>
-        <br><button onclick="enviarContato()" class="botao_form"><b>Cadastrar</b></button>
+        </form><br>
+        <a href="home.html"><button onclick="enviarContato()" class="botao_form"><b>Entrar</b></button></a>
         <p class="msg-valid" id="pvalidacao"></p>
         <div class="div_imagem_cont">
-            <img class="img_cadastro" src="../imgs/img-cadastro.png" alt="">
+            <img class="img_login" src="../imgs/img-login.png" alt="">
         </div>
     </div>
     <div class="redes_sociais_cadastro">
@@ -114,4 +87,4 @@
 
 </html>
 
-<script type="text/javascript" src="../js/cadastro.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>

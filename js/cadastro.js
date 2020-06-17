@@ -1,64 +1,45 @@
-function enviaContato() {
-    var erros = validaContato();
-    MensagemErro.innerHTML = '';
-    if (erros.length > 0) {
-        for (var a = 0; a < erros.length; a++) {
-            var erro = erros[a];
-            var li = document.createElement("li");
-            li.innerHTML = erro;
+function enviarContato() {
+    var msgErros = validacaoContato();
+    mensagemErro.innerHTML = '';
+    pvalidacao.innerHTML = '';
 
-            MensagemErro.appendChild(li);
+    if (msgErros.length > 0) {
+        for (var c = 0; c < msgErros.length; c++) {
+            var msgErro = msgErros[c];
+            var listaErros = document.createElement("li");
+            listaErros.innerHTML = msgErro;
+
+            mensagemErro.appendChild(listaErros)
         }
     } else {
-        // codigo que envia para o banco de dados
+        var p_valid = document.createElement("p");
+        p_valid.innerHTML = "Informações corretas, sua mensagem foi enviada com sucesso!<br> Aguarde e receba as novidades do maior campeão nacional!";
+        pvalidacao.appendChild(p_valid);
+        //Código que faz o envio para o BD
     }
-
-
 }
+function validacaoContato() {
+    var msgErros = [];
 
-function validaContato() {
-    var erros = [];
-
-    if (!nomesobrenome.value) {
-        erros.push("Preencha o nome");
+    if (!nome_contato.value) {
+        msgErros.push("Preencha o nome");
     }
 
-    if ((email.value.search("@") == -1) 
-        (email.value.search(".") == -1) 
-        (email.value.search(" ") >= 1)) {
-        erros.push("O formato de email é: usuario@dominio.com")
+    if ((email_contato.value.search("@") == -1) ||
+        (email_contato.value.search(".") == -1) ||
+        (email_contato.value.search(" ") >= 1)) {
+        msgErros.push('Preencha o email corretamente')
+
     }
-    return erros;
 
+    if ((tel_contato.value.search("-") == -1) ||
+        tel_contato.value[tel_contato.value.length - 5] != "-") {
+        msgErros.push("O formato do telefone está incorreto");
+    }
 
+    if (!mensagem_contato.value) {
+        msgErros.push("Preencha a mensagem");
+    }
+
+    return msgErros;
 }
-
-
-<div class="redes_sociais_conquistas">
-        <div>
-            <b class="titulo_redes">Acompanhe O Verdão Nas Redes Sociais:</b>
-        </div>
-        <div class="lista_redes">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/Palmeiras/">
-                        <img class="redesocial" src="../imgs/facebook.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/palmeiras/?hl=pt-br">
-                        <img class="redesocial" src="../imgs/instagram.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/Palmeiras">
-                        <img class="redesocial" src="../imgs/twitter.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <img class="imgbottom" src="../imgs/imgcadastro.png" alt="">
-    </div>
-    <div class="rodape_criado">
-        created by Caio Henrique Martins
-    </div>
